@@ -1,3 +1,4 @@
+
 1. Copy files from original locations to one folder
 
     1-grab-copy.sh fastq.gz RawData
