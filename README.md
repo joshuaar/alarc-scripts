@@ -1,4 +1,4 @@
-#README FOR PIPELINE USAGE
+#README FOR PIPELINE SCRIPTS 
 
 
 ##Part 1: Create Directories and Copy Data
@@ -58,7 +58,7 @@ now simply copy the extracted directory into the RawData folder we need to run t
         
     cp -rf extracted my_parent_dir/RawData
 
-where my_parent_dir is the directory created earlier to hold Scripts and RawData. The directory structure is now complete
+where my_parent_dir is the directory created earlier to hold Scripts and RawData. The directory structure is now complete.
 
 ##Running the Assembly Pipeline
 
@@ -110,7 +110,7 @@ Once this is done we should have the following directories within my_parent_dir:
     my_parent_dir
         Scripts
         RawData
-	1_Fastqc_RawData
+        1_Fastqc_RawData
         2_FilterRawData
         3_Fastqc_FilterRawData
         4_MergeFilterSamplesByExperiment
@@ -127,22 +127,22 @@ To print the header to the screen, use the following command:
 
 It should look something like this:
 
-ID,27A.genes.results,27Aln1.genes.results,27B.genes.results,27Bln1.genes.results,27C.genes.results,27Cln1.genes.results,39A.genes.results,39Aln1.genes.results,39B.genes.results,39Bln1.genes.results,39C.genes.results,39Cln1.genes.results
+    ID,27A.genes.results,27Aln1.genes.results,27B.genes.results,27Bln1.genes.results,27C.genes.results,27Cln1.genes.results,39A.genes.results,39Aln1.genes.results,39B.genes.results,39Bln1.genes.results,39C.genes.results,39Cln1.genes.results
 
 Each comma separated value (except for the first one called ID) is a sample. For each sample, we need to assign a group and indicate this with groups.txt. For the above example, there are 6 samples in each group, so the groups.txt file would look like this:
 
-1
-1
-1
-1
-1
-1
-2
-2
-2
-2
-2
-2
+    1
+    1
+    1
+    1
+    1
+    1
+    2
+    2
+    2
+    2
+    2
+    2
 
 The file should contain nothing but group ids. There should be n lines in the file, where n is the number of samples you are working with.
 Be sure to save the groups.txt file to the 7_Expression folder. The nano editor will work well for this:
