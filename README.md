@@ -1,5 +1,6 @@
 #README FOR PIPELINE SCRIPTS 
 
+This repository contains a number of bash scripts for executing a transcriptome (RNASeq) assembly and annotation pipeline.
 
 ##Create Directories and Copy Data
 
