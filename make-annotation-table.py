@@ -15,7 +15,7 @@ if __name__ == "__main__":
 	expression = np.array([i for i in csv.reader(open(args.expression))])
 	diff = np.array([i for i in csv.reader(open(args.diff))])
 	
-	expressionData = expression[:,1:]
+	expressionData = expression[:,0:]
 	diffData = diff[:,1:]
 	#print(blast.shape)
 	#print(expressionData.shape)
@@ -25,5 +25,5 @@ if __name__ == "__main__":
 		raise Exception("Input Data must be the same shape. Were these all done on the same FASTA file?"
 )
 	for i,v in enumerate(expressionData):
-		print(",".join([str(j) for j in list(blast[i]) + list(expressionData[i]) + list(diffData[i])]))
+		print(",".join([str(j) for j in list(expressionData[i]) + list(blast[i]) + list(diffData[i])]))
 	

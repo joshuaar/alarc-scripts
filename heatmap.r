@@ -1,3 +1,7 @@
+install.packages(gplots)
+require(gplots)
+getwd()
+
 x=read.csv("thermal2_diffexp_withvals.csv")
 x2=data.matrix(x[1:100,3:8]) #select table to plot
 
