@@ -1,7 +1,7 @@
 #README FOR PIPELINE SCRIPTS 
 
 
-##Part 1: Create Directories and Copy Data
+##Create Directories and Copy Data
 
 We start with several directories full of raw data. From this we need to create the following directory structure
 
