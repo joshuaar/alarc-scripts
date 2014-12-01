@@ -46,12 +46,13 @@ first cd to MyData, then run the following:
 
 This will create a directory called extracted within CopyData that looks as follows:
 
-    CopyData
-        extracted
-            MySample1.R1.fastq
-            MySample1.R2.fastq
-            MySample2.R1.fastq
-            MySample2.R2.fastq
+    MyData
+        CopyData
+            extracted
+                MySample1.R1.fastq
+                MySample1.R2.fastq
+                MySample2.R1.fastq
+                MySample2.R2.fastq
 
 now simply copy the extracted directory into the RawData folder we need to run the pipeline. From the CopyData directory:
         
